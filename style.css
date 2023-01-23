@@ -1,0 +1,226 @@
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+body {
+background-image: linear-gradient(to right, rgb(174, 173, 194) , rgb(205, 228, 226));
+}
+
+/* Check box*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+ 
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border-style: groove;
+  border-color: rgb(147, 179, 197);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #57f157;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+
+  content: "✔";
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #021105;
+  content: "";
+  display: block;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+
+}
+body div {
+  padding: 5rem;
+}
+body label {
+  display: block;
+  line-height: 40px;
+}
+/*logo*/
+.wendy {
+  height: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.top {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding-left: 1rem;
+  color: #c91c1c;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+li {
+  background-image: linear-gradient(to right, rgb(243, 243, 250) , rgb(253, 251, 251));
+  font-family: 'Noto Sans JP', sans-serif;
+}
+h1 {
+  color:rgb(32, 1, 1);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* notes ----------------*/
+#myDIV, #myDIV2, #myDIV3, #myDIV4, #myDIV5, #myDIV6, #myDIV7 {
+  display: none;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  background-color: inherit;
+  margin-top: 0px;
+}
+.notes {
+  top: 0;
+	width: 100%;
+}
+.list-group-item {
+  position: static !important;
+}
+.btn2{
+  display: flex;
+  margin: 2px;
+  box-shadow: 3px 4px 4px gray;
+}
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container1 {
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  margin: auto ;
+}
+
+#button2 {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px !important;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#button2:hover {
+  color: white;
+  background: #1ecd97;
+}
+#button2:active {
+  letter-spacing: 2px;
+}
+#button2:after {
+  content: "SUBMIT";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
+          animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ecd97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ecd97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
